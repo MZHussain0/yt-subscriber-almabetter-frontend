@@ -11,7 +11,12 @@ const SubscriberNames = async (props: Props) => {
   } catch (error) {
     console.log(error);
   }
-  return <CodeBlock data={data} text={"Details of all subscribers"} />;
+  return (
+    <CodeBlock
+      data={data}
+      text={"Details of all subscribers with names and subscribed channel"}
+    />
+  );
 };
 
 export default SubscriberNames;
